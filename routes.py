@@ -30,7 +30,7 @@ def health_check():
     """
     Health check route for the Fitness Class Booking API.
     """
-    return jsonify({"message": "Welcome to the Fitness Class Health Check API, API is Running Good."}), 200
+    return jsonify({"message": "Welcome to the FITShop Fitness Class API, API Health is Running Good."}), 200
 
 
 @api.route("/classes", methods=["GET"])
