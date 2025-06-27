@@ -96,6 +96,7 @@ def get_bookings():
     Get all bookings for a specific email address.
     """
     email = request.args.get("email")
+    target_tz = request.args.get("timezone", "UTC")
     logger.info("Received booking view request from : %s", email)
     if not email:
         return jsonify({"error": "email query parameter is required"}), 400
@@ -109,7 +110,7 @@ def get_bookings():
         result.append({
             "class_name": cls.name,
             "instructor": cls.instructor,
-            "datetime": convert_ist_to_tz(cls.datetime_ist, "UTC").isoformat(),
+            "datetime": convert_ist_to_tz(cls.datetime_ist, target_tz).isoformat(),
             "booking_id": b.id,
         })
     return jsonify(result)
