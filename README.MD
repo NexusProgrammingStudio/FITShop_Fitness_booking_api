@@ -111,7 +111,7 @@ curl http://localhost:5000/bookings?email=riya@example.com
 ### Setup
 
 ```bash
-  git clone https://github.com/yourusername/FITshop_fitness_booking_api.git  
+  git clone https://github.com/NexusProgrammingStudio/FITShop_Fitness_booking_api.git
   cd FITshop_fitness_booking_api  
   python -m venv .venv  
   source .venv/bin/activate  # On Windows use `venv\Scripts\activate`  
