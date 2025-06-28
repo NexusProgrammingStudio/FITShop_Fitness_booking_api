@@ -1,4 +1,4 @@
-# FITShop Fitness Class Booking Booking API
+# FITShop Fitness Class Booking API
 
 This is a Flask-based REST API for a fictional fitness studio that allows users to:
 
